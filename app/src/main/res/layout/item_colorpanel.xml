@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <my.edu.utar.practical_individual_assignment.object.ImgCustom
+
+        android:id="@+id/imgColorPanel"
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:tint="#BBC34A"
+        android:src="@drawable/square"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

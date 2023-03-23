@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_background3"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_coins_background"
+        android:gravity="center"
+        android:onClick="backHome"
+        android:padding="5dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:text=""
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:text=""
+        android:textAllCaps="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:text="Score Board"
+        android:textAllCaps="true"/>
+
+    <TableLayout
+        android:id="@+id/score_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+<!--            <TextView-->
+<!--                android:text="No."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:gravity="center"-->
+<!--                android:textStyle="bold" />-->
+
+            <TextView
+                android:text="Name"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="182dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Score"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/app_background3"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Congratulations"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/imgIconCenter"
+            android:src="@drawable/icon1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="#E56BA6"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="Level"-->
+<!--            android:textAllCaps="true"/>-->
+        <TextView
+            android:id="@+id/textLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:text="SCORE IS TOP 25 HIGHEST SCORE"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textLevel2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:text="Save your name and the grade you just received"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dontSaveBtn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/text_coins_background"
+        android:gravity="center"
+        android:onClick="dontSave"
+        android:padding="5dp"
+        android:text="Got It!"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
